@@ -16,7 +16,7 @@ func (f *Framework) LoadTemplate(fileName string, replacements map[string]string
 }
 
 func (f *Framework) LoadFile(fileName string) string {
-	content, err := ioutil.ReadFile("stubbing/" + fileName)
+	content, err := ioutil.ReadFile("ovirt/stubbing/" + fileName)
 	if err != nil {
 		ginkgo.Fail(err.Error())
 	}
